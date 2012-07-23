@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7BA16A4-7636-46CA-AAAD-3CB3361ECD40}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.Analytics</RootNamespace>
+    <AssemblyName>Google.GData.Analytics</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>10.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\analytics.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ASP|AnyCPU' ">
+    <OutputPath>bin\ASP\</OutputPath>
+    <DefineConstants>TRACE;PARTIALLY_TRUSTED</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions\CommonDataExtensions.csproj">
+      <Project>{21BCB644-F9C3-4ADC-8BE1-4E55C6565011}</Project>
+      <Name>CommonDataExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
+      <Project>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</Project>
+      <Name>Core.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Analytics.MA\accountentry.cs">
+      <Link>accountentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\accountfeed.cs">
+      <Link>accountfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\accountquery.cs">
+      <Link>accountquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\aggregates.cs">
+      <Link>aggregates.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\analyticsrequest.cs">
+      <Link>analyticsrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\analyticsservice.cs">
+      <Link>analyticsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\customvariable.cs">
+      <Link>customvariable.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dataentry.cs">
+      <Link>dataentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\datafeed.cs">
+      <Link>datafeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dataquery.cs">
+      <Link>dataquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\definition.cs">
+      <Link>definition.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\destination.cs">
+      <Link>destination.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dimension.cs">
+      <Link>dimension.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\engagement.cs">
+      <Link>engagement.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\goal.cs">
+      <Link>goal.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\metric.cs">
+      <Link>metric.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\property.cs">
+      <Link>property.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\segment.cs">
+      <Link>segment.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\sourceentry.cs">
+      <Link>sourceentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\step.cs">
+      <Link>step.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\tableid.cs">
+      <Link>tableid.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\tablename.cs">
+      <Link>tablename.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Analytics.MA\analytics.sn">
+      <Link>analytics.sn</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="39677eda-72b9-469c-9f92-6a1ee8e7620c" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3623782-A244-41D7-A8CA-5854307691D3}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.Documents</RootNamespace>
+    <AssemblyName>Google.GData.Documents.MA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="archiveentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="archivefeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="changeentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="changesfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="docrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="documententry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="documentfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="documentquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="documentservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="metadataentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="metadatafeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="revisionentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="revisionfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessControl.MA\AccessControl.MA.csproj">
+      <Project>{380DCB70-4A10-4F68-8E02-7BD9EB080C59}</Project>
+      <Name>AccessControl.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonDataExtensions.MA\CommonDataExtensions.MA.csproj">
+      <Project>{C40B61B8-E1BD-4B5C-993A-58FF622AE38F}</Project>
+      <Name>CommonDataExtensions.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MA\Core.Client.MA.csproj">
+      <Project>{EF95AD9D-D1F5-4C04-B53C-02E21B624ABC}</Project>
+      <Name>Core.Client.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="documents.sn" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

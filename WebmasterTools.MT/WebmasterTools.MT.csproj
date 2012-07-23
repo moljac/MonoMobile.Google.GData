@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A10203B-F00D-4E82-9B9A-FEFB7EA16916}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.WebmasterTools</RootNamespace>
+    <AssemblyName>Google.GData.WebmasterTools.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\WebmastgerTools.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesentry.cs">
+      <Link>crawlissuesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesfeed.cs">
+      <Link>crawlissuesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesquery.cs">
+      <Link>crawlissuesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsentry.cs">
+      <Link>keywordsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsfeed.cs">
+      <Link>keywordsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsquery.cs">
+      <Link>keywordsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesentry.cs">
+      <Link>messagesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesfeed.cs">
+      <Link>messagesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesquery.cs">
+      <Link>messagesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsentry.cs">
+      <Link>sitemapsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsfeed.cs">
+      <Link>sitemapsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsquery.cs">
+      <Link>sitemapsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesentry.cs">
+      <Link>sitesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesfeed.cs">
+      <Link>sitesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesquery.cs">
+      <Link>sitesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmasterbaseentry.cs">
+      <Link>webmasterbaseentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsextensions.cs">
+      <Link>webmastertoolsextensions.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsrequest.cs">
+      <Link>webmastertoolsrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsservice.cs">
+      <Link>webmastertoolsservice.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="4e24cccf-cda2-499c-b620-bef1fe38b7d0" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

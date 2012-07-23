@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF95AD9D-D1F5-4C04-B53C-02E21B624ABC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Client</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AssemblyName>Google.GData.Client.MA</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Diagnostics\System.Diagnostics.MA\System.Diagnostics.MA.csproj">
+      <Project>{61972F0E-86A8-4A1E-9A02-BD271EDB9CC6}</Project>
+      <Name>System.Diagnostics.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abstractentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="abstractfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="appcontrol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="asyncDataHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="asyncservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atombase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atombaselink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomcategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomcontent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomfeedentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomFeedgenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomfeedparser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomicon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomlink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomlogo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomnametable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomperson.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomsource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomtextconstruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="atomuri.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="authentication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="authexceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="authsubutil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="basefeedparser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="basenametable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="batcherror.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="batcherrors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="collections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="documentquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="extcollections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="extensionbase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedconstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedmodel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="feedquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gauthrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gauthsubrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gdatabatch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="goauth2request.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="goauthrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HttpUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mediaservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mediasource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oauthbase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oauthparameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oauthuri.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oauthutil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="request.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="resumableupload.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rssfeedparser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="service.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="serviceinterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="simplecontainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="simpleelement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tracing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="versioninterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xmlextension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clientkey.sn" />
+    <None Include="HttpUtility.MT.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

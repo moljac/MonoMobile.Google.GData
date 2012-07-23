@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{321BC361-7817-4471-8E7D-8B9D09EC3B48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.WebmasterTools</RootNamespace>
+    <AssemblyName>Google.GData.WebmasterTools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\webmastertool.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions\CommonDataExtensions.csproj">
+      <Project>{21BCB644-F9C3-4ADC-8BE1-4E55C6565011}</Project>
+      <Name>CommonDataExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
+      <Project>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</Project>
+      <Name>Core.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\WebmastgerTools.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesentry.cs">
+      <Link>crawlissuesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesfeed.cs">
+      <Link>crawlissuesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\crawlissuesquery.cs">
+      <Link>crawlissuesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsentry.cs">
+      <Link>keywordsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsfeed.cs">
+      <Link>keywordsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\keywordsquery.cs">
+      <Link>keywordsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesentry.cs">
+      <Link>messagesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesfeed.cs">
+      <Link>messagesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\messagesquery.cs">
+      <Link>messagesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsentry.cs">
+      <Link>sitemapsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsfeed.cs">
+      <Link>sitemapsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitemapsquery.cs">
+      <Link>sitemapsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesentry.cs">
+      <Link>sitesentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesfeed.cs">
+      <Link>sitesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\sitesquery.cs">
+      <Link>sitesquery.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmasterbaseentry.cs">
+      <Link>webmasterbaseentry.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsextensions.cs">
+      <Link>webmastertoolsextensions.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsrequest.cs">
+      <Link>webmastertoolsrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\WebmastgerTools.MA\webmastertoolsservice.cs">
+      <Link>webmastertoolsservice.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="4e24cccf-cda2-499c-b620-bef1fe38b7d0" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

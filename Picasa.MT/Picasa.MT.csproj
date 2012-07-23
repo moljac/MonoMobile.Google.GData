@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4421D6EF-9E93-469E-B57D-79F962F0A64A}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Photos</RootNamespace>
+    <AssemblyName>Google.GData.Photos.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Picasa.MA\albumentry.cs">
+      <Link>albumentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\commententry.cs">
+      <Link>commententry.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\gextphotos.cs">
+      <Link>gextphotos.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\kindsquery.cs">
+      <Link>kindsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\photoentry.cs">
+      <Link>photoentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\photosrequest.cs">
+      <Link>photosrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\picasaentry.cs">
+      <Link>picasaentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\picasafeed.cs">
+      <Link>picasafeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\picasaquery.cs">
+      <Link>picasaquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\picasaservice.cs">
+      <Link>picasaservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Picasa.MA\tagentry.cs">
+      <Link>tagentry.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Picasa.MA\picasa.sn">
+      <Link>picasa.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="103b2fce-68ec-4477-9b72-640f1e8bcd39" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

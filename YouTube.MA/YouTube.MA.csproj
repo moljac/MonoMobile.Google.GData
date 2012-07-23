@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57963E27-0300-482B-8F9D-330DBDA7A5D1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CommonDataExtensions.MA</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AssemblyName>CommonDataExtensions.MA</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Diagnostics\System.Diagnostics.MA\System.Diagnostics.MA.csproj">
+      <Project>{61972F0E-86A8-4A1E-9A02-BD271EDB9CC6}</Project>
+      <Name>System.Diagnostics.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonDataExtensions.MA\CommonDataExtensions.MA.csproj">
+      <Project>{C40B61B8-E1BD-4B5C-993A-58FF622AE38F}</Project>
+      <Name>CommonDataExtensions.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MA\Core.Client.MA.csproj">
+      <Project>{EF95AD9D-D1F5-4C04-B53C-02E21B624ABC}</Project>
+      <Name>Core.Client.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="YouTube SDK\YouTube SDK.sln" />
+    <Content Include="YouTube SDK\YouTube SDK\YouTube SDK.vdproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="YouTube SDK\Help\YouTubeSDK.chm" />
+    <None Include="YouTube SDK\YouTubeSDKHelp.shfbproj" />
+    <None Include="youtube.sn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="activitiesfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="activityentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="commententry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="commentsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="complaintentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="friendsentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="friendsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messageentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messagefeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="playlistentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="playlistfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="playlistsentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="playlistsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="profileentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="profilefeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="showentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="showfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="showseasonentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="showseasonfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="subscriptionentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="subscriptionfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubebaseentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubeentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubeextensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubefeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubequery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtuberequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="youtubeservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

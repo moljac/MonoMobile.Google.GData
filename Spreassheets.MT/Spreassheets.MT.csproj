@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8504AB6-AB56-46BC-87C9-E5A8446BB532}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Spreadsheets</RootNamespace>
+    <AssemblyName>Google.GData.Spreadsheets.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Spreadsheets.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\cellentry.cs">
+      <Link>cellentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\cellfeed.cs">
+      <Link>cellfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\cellquery.cs">
+      <Link>cellquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\colcount.cs">
+      <Link>colcount.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\gdataspreadsheetsnametable.cs">
+      <Link>gdataspreadsheetsnametable.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\listentry.cs">
+      <Link>listentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\listfeed.cs">
+      <Link>listfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\listquery.cs">
+      <Link>listquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\rowcount.cs">
+      <Link>rowcount.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\spreadsheetentry.cs">
+      <Link>spreadsheetentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\spreadsheetfeed.cs">
+      <Link>spreadsheetfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\spreadsheetquery.cs">
+      <Link>spreadsheetquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\spreadsheets.cs">
+      <Link>spreadsheets.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\spreadsheetservice.cs">
+      <Link>spreadsheetservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\worksheetentry.cs">
+      <Link>worksheetentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\worksheetfeed.cs">
+      <Link>worksheetfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Spreadsheets.MA\worksheetquery.cs">
+      <Link>worksheetquery.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Spreadsheets.MA\spreadsheets.sn">
+      <Link>spreadsheets.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="25475e82-3273-4340-b957-62fc469d3ccd" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

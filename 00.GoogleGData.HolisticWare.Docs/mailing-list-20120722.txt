@@ -1,0 +1,18 @@
+Hi
+
+I have managed to prepare Google GData API SDK both for MT and MA. 
+I have tried for WP, but right now not enough free time to do patches etc.
+
+https://github.com/moljac/MonoMobile.Google.GData
+
+Problematic stuff is not removed, but:
+	registry is extracted as partial class into project for desktop
+	Tracing/HttpUtility added in System.Diagnostics project
+
+TODOs
+	assembly version
+	samples
+	unit tests for mobile!?!?
+	WP?!?!
+	
+

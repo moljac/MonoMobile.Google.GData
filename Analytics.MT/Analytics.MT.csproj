@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BA3B589-C516-4324-AA27-0693530129B8}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Analytics</RootNamespace>
+    <AssemblyName>Google.GData.Analytics.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Analytics.MA\accountentry.cs">
+      <Link>accountentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\accountfeed.cs">
+      <Link>accountfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\accountquery.cs">
+      <Link>accountquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\aggregates.cs">
+      <Link>aggregates.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\analyticsrequest.cs">
+      <Link>analyticsrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\analyticsservice.cs">
+      <Link>analyticsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\customvariable.cs">
+      <Link>customvariable.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dataentry.cs">
+      <Link>dataentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\datafeed.cs">
+      <Link>datafeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dataquery.cs">
+      <Link>dataquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\definition.cs">
+      <Link>definition.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\destination.cs">
+      <Link>destination.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\dimension.cs">
+      <Link>dimension.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\engagement.cs">
+      <Link>engagement.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\goal.cs">
+      <Link>goal.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\metric.cs">
+      <Link>metric.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\property.cs">
+      <Link>property.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\segment.cs">
+      <Link>segment.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\sourceentry.cs">
+      <Link>sourceentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\step.cs">
+      <Link>step.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\tableid.cs">
+      <Link>tableid.cs</Link>
+    </Compile>
+    <Compile Include="..\Analytics.MA\tablename.cs">
+      <Link>tablename.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Analytics.MA\analytics.sn">
+      <Link>analytics.sn</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="39677eda-72b9-469c-9f92-6a1ee8e7620c" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

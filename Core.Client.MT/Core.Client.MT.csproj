@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Client</RootNamespace>
+    <AssemblyName>Google.GData.Client.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Core.Client.MA\abstractentry.cs">
+      <Link>abstractentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\abstractfeed.cs">
+      <Link>abstractfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\appcontrol.cs">
+      <Link>appcontrol.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\asyncDataHandler.cs">
+      <Link>asyncDataHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\asyncservice.cs">
+      <Link>asyncservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atombase.cs">
+      <Link>atombase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atombaselink.cs">
+      <Link>atombaselink.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomcategory.cs">
+      <Link>atomcategory.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomcontent.cs">
+      <Link>atomcontent.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeed.cs">
+      <Link>atomfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeedentry.cs">
+      <Link>atomfeedentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomFeedgenerator.cs">
+      <Link>atomFeedgenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeedparser.cs">
+      <Link>atomfeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomicon.cs">
+      <Link>atomicon.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomId.cs">
+      <Link>atomId.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomlink.cs">
+      <Link>atomlink.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomlogo.cs">
+      <Link>atomlogo.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomnametable.cs">
+      <Link>atomnametable.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomperson.cs">
+      <Link>atomperson.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomsource.cs">
+      <Link>atomsource.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomtextconstruct.cs">
+      <Link>atomtextconstruct.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomuri.cs">
+      <Link>atomuri.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authentication.cs">
+      <Link>authentication.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authexceptions.cs">
+      <Link>authexceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authsubutil.cs">
+      <Link>authsubutil.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\basefeedparser.cs">
+      <Link>basefeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\basenametable.cs">
+      <Link>basenametable.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\batcherror.cs">
+      <Link>batcherror.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\batcherrors.cs">
+      <Link>batcherrors.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\collections.cs">
+      <Link>collections.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\documentquery.cs">
+      <Link>documentquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\exceptions.cs">
+      <Link>exceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\extcollections.cs">
+      <Link>extcollections.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\extensionbase.cs">
+      <Link>extensionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedconstants.cs">
+      <Link>feedconstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedmodel.cs">
+      <Link>feedmodel.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedquery.cs">
+      <Link>feedquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gauthrequest.cs">
+      <Link>gauthrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gauthsubrequest.cs">
+      <Link>gauthsubrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gdatabatch.cs">
+      <Link>gdatabatch.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\goauth2request.cs">
+      <Link>goauth2request.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\goauthrequest.cs">
+      <Link>goauthrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\Helpers.cs">
+      <Link>Helpers.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\HttpUtility.cs">
+      <Link>HttpUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\HttpUtility.MT.cs">
+      <Link>HttpUtility.MT.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\logrequest.cs">
+      <Link>logrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\mediaservice.cs">
+      <Link>mediaservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\mediasource.cs">
+      <Link>mediasource.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthbase.cs">
+      <Link>oauthbase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthparameters.cs">
+      <Link>oauthparameters.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthuri.cs">
+      <Link>oauthuri.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthutil.cs">
+      <Link>oauthutil.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\request.cs">
+      <Link>request.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\resumableupload.cs">
+      <Link>resumableupload.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\rssfeedparser.cs">
+      <Link>rssfeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\service.cs">
+      <Link>service.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\serviceinterface.cs">
+      <Link>serviceinterface.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\simplecontainer.cs">
+      <Link>simplecontainer.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\simpleelement.cs">
+      <Link>simpleelement.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\tracing.cs">
+      <Link>tracing.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\utilities.cs">
+      <Link>utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\versioninterface.cs">
+      <Link>versioninterface.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\xmlextension.cs">
+      <Link>xmlextension.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Core.Client.MA\clientkey.sn">
+      <Link>clientkey.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\System.Diagnostics\System.Diagnostics.MT\System.Diagnostics.MT.csproj">
+      <Project>{EC9A012A-7808-43AC-A920-BF18FF1C957B}</Project>
+      <Name>System.Diagnostics.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="ef95ad9d-d1f5-4c04-b53c-02e21b624abc" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

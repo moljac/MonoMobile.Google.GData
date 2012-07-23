@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C8CB832-3F44-4963-8C89-437AAAA7765D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.ContentForShopping</RootNamespace>
+    <AssemblyName>Google.GData.ContentForShopping</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\contentforshopping.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ContentForShopping.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\contentforshoppingnametable.cs">
+      <Link>contentforshoppingnametable.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\contentforshoppingservice.cs">
+      <Link>contentforshoppingservice.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\datafeedentry.cs">
+      <Link>datafeedentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\datafeedfeed.cs">
+      <Link>datafeedfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\datafeedquery.cs">
+      <Link>datafeedquery.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\dataqualityentry.cs">
+      <Link>dataqualityentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\dataqualityfeed.cs">
+      <Link>dataqualityfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\dataqualityquery.cs">
+      <Link>dataqualityquery.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\accountstatus.cs">
+      <Link>elements\accountstatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\additionalimagelink.cs">
+      <Link>elements\additionalimagelink.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\admin.cs">
+      <Link>elements\admin.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adult.cs">
+      <Link>elements\adult.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adultcontent.cs">
+      <Link>elements\adultcontent.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adwordsgrouping.cs">
+      <Link>elements\adwordsgrouping.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adwordslabels.cs">
+      <Link>elements\adwordslabels.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adwordsqueryparam.cs">
+      <Link>elements\adwordsqueryparam.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\adwordsredirect.cs">
+      <Link>elements\adwordsredirect.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\agegroup.cs">
+      <Link>elements\agegroup.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\attributelanguage.cs">
+      <Link>elements\attributelanguage.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\author.cs">
+      <Link>elements\author.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\availability.cs">
+      <Link>elements\availability.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\brand.cs">
+      <Link>elements\brand.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\channel.cs">
+      <Link>elements\channel.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\color.cs">
+      <Link>elements\color.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\condition.cs">
+      <Link>elements\condition.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\contentlanguage.cs">
+      <Link>elements\contentlanguage.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\customattribute.cs">
+      <Link>elements\customattribute.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\customgroup.cs">
+      <Link>elements\customgroup.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\datapoint.cs">
+      <Link>elements\datapoint.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\delimiter.cs">
+      <Link>elements\delimiter.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\edition.cs">
+      <Link>elements\edition.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\encoding.cs">
+      <Link>elements\encoding.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\exampleitem.cs">
+      <Link>elements\exampleitem.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\exampleitemlink.cs">
+      <Link>elements\exampleitemlink.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\exampleitemtitle.cs">
+      <Link>elements\exampleitemtitle.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\excludeddestination.cs">
+      <Link>elements\excludeddestination.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\expirationdate.cs">
+      <Link>elements\expirationdate.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\feature.cs">
+      <Link>elements\feature.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\featuredproduct.cs">
+      <Link>elements\featuredproduct.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\feedfilename.cs">
+      <Link>elements\feedfilename.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\feedtype.cs">
+      <Link>elements\feedtype.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\fileformat.cs">
+      <Link>elements\fileformat.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\gender.cs">
+      <Link>elements\gender.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\genre.cs">
+      <Link>elements\genre.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\googleproductcategory.cs">
+      <Link>elements\googleproductcategory.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\gtin.cs">
+      <Link>elements\gtin.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\imagelink.cs">
+      <Link>elements\imagelink.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\internalid.cs">
+      <Link>elements\internalid.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\issue.cs">
+      <Link>elements\issue.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\issuegroup.cs">
+      <Link>elements\issuegroup.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\issuegroups.cs">
+      <Link>elements\issuegroups.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\itemgroupid.cs">
+      <Link>elements\itemgroupid.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\itemid.cs">
+      <Link>elements\itemid.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\manufacturer.cs">
+      <Link>elements\manufacturer.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\material.cs">
+      <Link>elements\material.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\modelnumber.cs">
+      <Link>elements\modelnumber.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\mpn.cs">
+      <Link>elements\mpn.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\pages.cs">
+      <Link>elements\pages.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\pattern.cs">
+      <Link>elements\pattern.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\performance.cs">
+      <Link>elements\performance.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\permission.cs">
+      <Link>elements\permission.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\price.cs">
+      <Link>elements\price.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\processingstatus.cs">
+      <Link>elements\processingstatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\productcontrol.cs">
+      <Link>elements\productcontrol.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\productid.cs">
+      <Link>elements\productid.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\productreviewaverage.cs">
+      <Link>elements\productreviewaverage.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\productreviewcount.cs">
+      <Link>elements\productreviewcount.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\producttype.cs">
+      <Link>elements\producttype.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\productweight.cs">
+      <Link>elements\productweight.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\publisher.cs">
+      <Link>elements\publisher.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\quantity.cs">
+      <Link>elements\quantity.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\requireddestination.cs">
+      <Link>elements\requireddestination.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\reviewsurl.cs">
+      <Link>elements\reviewsurl.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\saleprice.cs">
+      <Link>elements\saleprice.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\salepriceeffectivedate.cs">
+      <Link>elements\salepriceeffectivedate.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shipping.cs">
+      <Link>elements\shipping.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shippingcountry.cs">
+      <Link>elements\shippingcountry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shippingprice.cs">
+      <Link>elements\shippingprice.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shippingregion.cs">
+      <Link>elements\shippingregion.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shippingservice.cs">
+      <Link>elements\shippingservice.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\shippingweight.cs">
+      <Link>elements\shippingweight.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\size.cs">
+      <Link>elements\size.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\status.cs">
+      <Link>elements\status.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\submittedvalue.cs">
+      <Link>elements\submittedvalue.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\targetcountry.cs">
+      <Link>elements\targetcountry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\tax.cs">
+      <Link>elements\tax.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\taxcountry.cs">
+      <Link>elements\taxcountry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\taxrate.cs">
+      <Link>elements\taxrate.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\taxregion.cs">
+      <Link>elements\taxregion.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\taxship.cs">
+      <Link>elements\taxship.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\usequotedfields.cs">
+      <Link>elements\usequotedfields.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\validatedestination.cs">
+      <Link>elements\validatedestination.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\valueonlandingpage.cs">
+      <Link>elements\valueonlandingpage.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warning.cs">
+      <Link>elements\warning.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warningcode.cs">
+      <Link>elements\warningcode.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warningdomain.cs">
+      <Link>elements\warningdomain.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warninglocation.cs">
+      <Link>elements\warninglocation.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warningmessage.cs">
+      <Link>elements\warningmessage.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\warnings.cs">
+      <Link>elements\warnings.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\elements\year.cs">
+      <Link>elements\year.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\inventoryentry.cs">
+      <Link>inventoryentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\inventoryfeed.cs">
+      <Link>inventoryfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\itemquery.cs">
+      <Link>itemquery.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\managedaccountsentry.cs">
+      <Link>managedaccountsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\managedaccountsfeed.cs">
+      <Link>managedaccountsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\managedaccountsquery.cs">
+      <Link>managedaccountsquery.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\productentry.cs">
+      <Link>productentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\productfeed.cs">
+      <Link>productfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\productquery.cs">
+      <Link>productquery.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\usersentry.cs">
+      <Link>usersentry.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\usersfeed.cs">
+      <Link>usersfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\ContentForShopping.MA\usersquery.cs">
+      <Link>usersquery.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions\CommonDataExtensions.csproj">
+      <Project>{21BCB644-F9C3-4ADC-8BE1-4E55C6565011}</Project>
+      <Name>CommonDataExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
+      <Project>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</Project>
+      <Name>Core.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="cd87e961-0641-478c-8520-ecc793a439fe" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

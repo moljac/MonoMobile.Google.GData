@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E24CCCF-CDA2-499C-B620-BEF1FE38B7D0}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.WebmasterTools</RootNamespace>
+    <AssemblyName>Google.GData.WebmasterTools.MA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="crawlissuesentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crawlissuesfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crawlissuesquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="keywordsentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="keywordsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="keywordsquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messagesentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messagesfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="messagesquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sitemapsentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sitemapsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sitemapsquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sitesentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sitesfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sitesquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webmasterbaseentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webmastertoolsextensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webmastertoolsrequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webmastertoolsservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MA\CommonDataExtensions.MA.csproj">
+      <Project>{C40B61B8-E1BD-4B5C-993A-58FF622AE38F}</Project>
+      <Name>CommonDataExtensions.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MA\Core.Client.MA.csproj">
+      <Project>{EF95AD9D-D1F5-4C04-B53C-02E21B624ABC}</Project>
+      <Name>Core.Client.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

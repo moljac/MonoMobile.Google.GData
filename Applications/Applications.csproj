@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96CCB33A-3B32-480E-B83D-93F0309F7DD2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Google.GData.Apps</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Apps</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>10.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DocumentationFile>bin\gapps.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ASP|AnyCPU' ">
+    <OutputPath>bin\asp\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>PARTIALLY_TRUSTED</DefineConstants>
+    <DocumentationFile>bin\gapps.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
+      <Project>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</Project>
+      <Name>Core.Client</Name>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\CommonDataExtensions\CommonDataExtensions.csproj">
+      <Name>CommonDataExtensions</Name>
+      <Project>{21BCB644-F9C3-4ADC-8BE1-4E55C6565011}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Applications.MA\accountinfo.cs">
+      <Link>accountinfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\adminsettingsentry.cs">
+      <Link>adminsettingsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\adminsettingsfeed.cs">
+      <Link>adminsettingsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\adminsettingsservice.cs">
+      <Link>adminsettingsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\appsexception.cs">
+      <Link>appsexception.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\appsextendedentry.cs">
+      <Link>appsextendedentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\appsextendedfeed.cs">
+      <Link>appsextendedfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\appspropertyservice.cs">
+      <Link>appspropertyservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\appsservice.cs">
+      <Link>appsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\auditservice.cs">
+      <Link>auditservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\calendarresourceservice.cs">
+      <Link>calendarresourceservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\genericfeed.cs">
+      <Link>genericfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\googlemailsettingsservice.cs">
+      <Link>googlemailsettingsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\groupentry.cs">
+      <Link>groupentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\groupsservice.cs">
+      <Link>groupsservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\mailboxdumprequest.cs">
+      <Link>mailboxdumprequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\mailitementry.cs">
+      <Link>mailitementry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\mailitemfeed.cs">
+      <Link>mailitemfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\mailitemservice.cs">
+      <Link>mailitemservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\mailmonitor.cs">
+      <Link>mailmonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\memberentry.cs">
+      <Link>memberentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\multidomainmanagementservice.cs">
+      <Link>multidomainmanagementservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\nicknameentry.cs">
+      <Link>nicknameentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\nicknamefeed.cs">
+      <Link>nicknamefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\nicknamequery.cs">
+      <Link>nicknamequery.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\nicknameservice.cs">
+      <Link>nicknameservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\orgmanagementservice.cs">
+      <Link>orgmanagementservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\ownerentry.cs">
+      <Link>ownerentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\userentry.cs">
+      <Link>userentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\userfeed.cs">
+      <Link>userfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\userquery.cs">
+      <Link>userquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Applications.MA\userservice.cs">
+      <Link>userservice.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Applications.MA\gapps.sn">
+      <Link>gapps.sn</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="073b3aec-5d25-44c2-b3fa-fa928e385628" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

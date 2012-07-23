@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Google.GData.Client</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Client</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>10.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DocumentationFile>bin\gdata.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ASP|AnyCPU' ">
+    <OutputPath>bin\asp\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>PARTIALLY_TRUSTED</DefineConstants>
+    <DocumentationFile>bin\gdata.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Core.Client.MA\abstractentry.cs">
+      <Link>abstractentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\abstractfeed.cs">
+      <Link>abstractfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\appcontrol.cs">
+      <Link>appcontrol.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\asyncDataHandler.cs">
+      <Link>asyncDataHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\asyncservice.cs">
+      <Link>asyncservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atombase.cs">
+      <Link>atombase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atombaselink.cs">
+      <Link>atombaselink.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomcategory.cs">
+      <Link>atomcategory.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomcontent.cs">
+      <Link>atomcontent.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeed.cs">
+      <Link>atomfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeedentry.cs">
+      <Link>atomfeedentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomFeedgenerator.cs">
+      <Link>atomFeedgenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomfeedparser.cs">
+      <Link>atomfeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomicon.cs">
+      <Link>atomicon.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomId.cs">
+      <Link>atomId.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomlink.cs">
+      <Link>atomlink.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomlogo.cs">
+      <Link>atomlogo.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomnametable.cs">
+      <Link>atomnametable.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomperson.cs">
+      <Link>atomperson.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomsource.cs">
+      <Link>atomsource.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomtextconstruct.cs">
+      <Link>atomtextconstruct.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\atomuri.cs">
+      <Link>atomuri.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authentication.cs">
+      <Link>authentication.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authexceptions.cs">
+      <Link>authexceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\authsubutil.cs">
+      <Link>authsubutil.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\basefeedparser.cs">
+      <Link>basefeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\basenametable.cs">
+      <Link>basenametable.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\batcherror.cs">
+      <Link>batcherror.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\batcherrors.cs">
+      <Link>batcherrors.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\collections.cs">
+      <Link>collections.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\documentquery.cs">
+      <Link>documentquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\exceptions.cs">
+      <Link>exceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\extcollections.cs">
+      <Link>extcollections.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\extensionbase.cs">
+      <Link>extensionbase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedconstants.cs">
+      <Link>feedconstants.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedmodel.cs">
+      <Link>feedmodel.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\feedquery.cs">
+      <Link>feedquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gauthrequest.cs">
+      <Link>gauthrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gauthsubrequest.cs">
+      <Link>gauthsubrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\gdatabatch.cs">
+      <Link>gdatabatch.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\goauth2request.cs">
+      <Link>goauth2request.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\goauthrequest.cs">
+      <Link>goauthrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\Helpers.cs">
+      <Link>Helpers.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\HttpUtility.cs">
+      <Link>HttpUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\HttpUtility.MT.cs">
+      <Link>HttpUtility.MT.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\logrequest.cs">
+      <Link>logrequest.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\mediaservice.cs">
+      <Link>mediaservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\mediasource.cs">
+      <Link>mediasource.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthbase.cs">
+      <Link>oauthbase.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthparameters.cs">
+      <Link>oauthparameters.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthuri.cs">
+      <Link>oauthuri.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\oauthutil.cs">
+      <Link>oauthutil.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\request.cs">
+      <Link>request.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\resumableupload.cs">
+      <Link>resumableupload.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\rssfeedparser.cs">
+      <Link>rssfeedparser.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\service.cs">
+      <Link>service.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\serviceinterface.cs">
+      <Link>serviceinterface.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\simplecontainer.cs">
+      <Link>simplecontainer.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\simpleelement.cs">
+      <Link>simpleelement.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\tracing.cs">
+      <Link>tracing.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\utilities.cs">
+      <Link>utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\versioninterface.cs">
+      <Link>versioninterface.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.MA\xmlextension.cs">
+      <Link>xmlextension.cs</Link>
+    </Compile>
+    <Compile Include="..\Core.Client.WP\SerializationInfo.cs">
+      <Link>SerializationInfo.cs</Link>
+    </Compile>
+    <Compile Include="mediasource.Registry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Core.Client.MA\clientkey.sn">
+      <Link>clientkey.sn</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="ef95ad9d-d1f5-4c04-b53c-02e21b624abc" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

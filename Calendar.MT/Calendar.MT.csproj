@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82022FC6-76C1-4B09-99CE-784045C6B834}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.Calendar</RootNamespace>
+    <AssemblyName>Google.GData.Calendar.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Calendar.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\calendarentry.cs">
+      <Link>calendarentry.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\calendarfeed.cs">
+      <Link>calendarfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\calendarquery.cs">
+      <Link>calendarquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\calendarservice.cs">
+      <Link>calendarservice.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\evententry.cs">
+      <Link>evententry.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\eventfeed.cs">
+      <Link>eventfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\eventquery.cs">
+      <Link>eventquery.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\webcontent.cs">
+      <Link>webcontent.cs</Link>
+    </Compile>
+    <Compile Include="..\Calendar.MA\webcontentlink.cs">
+      <Link>webcontentlink.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Calendar.MA\calendarkey.sn">
+      <Link>calendarkey.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessControl.MT\AccessControl.MT.csproj">
+      <Project>{6B872DD3-1AAB-4FF5-A49D-62B8841CA660}</Project>
+      <Name>AccessControl.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="ddbf9ae8-cad9-4524-9fe8-2703927d510b" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

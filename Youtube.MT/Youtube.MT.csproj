@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20D2E5AE-6CB3-4D05-A4E5-A7D3C8B6ED8F}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>YouTube</RootNamespace>
+    <AssemblyName>YouTube.MT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YouTube.MA\activitiesfeed.cs">
+      <Link>activitiesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\activityentry.cs">
+      <Link>activityentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\commententry.cs">
+      <Link>commententry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\commentsfeed.cs">
+      <Link>commentsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\complaintentry.cs">
+      <Link>complaintentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\friendsentry.cs">
+      <Link>friendsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\friendsfeed.cs">
+      <Link>friendsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\messageentry.cs">
+      <Link>messageentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\messagefeed.cs">
+      <Link>messagefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistentry.cs">
+      <Link>playlistentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistfeed.cs">
+      <Link>playlistfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistsentry.cs">
+      <Link>playlistsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistsfeed.cs">
+      <Link>playlistsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\profileentry.cs">
+      <Link>profileentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\profilefeed.cs">
+      <Link>profilefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showentry.cs">
+      <Link>showentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showfeed.cs">
+      <Link>showfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showseasonentry.cs">
+      <Link>showseasonentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showseasonfeed.cs">
+      <Link>showseasonfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\subscriptionentry.cs">
+      <Link>subscriptionentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\subscriptionfeed.cs">
+      <Link>subscriptionfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubebaseentry.cs">
+      <Link>youtubebaseentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeentry.cs">
+      <Link>youtubeentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeextensions.cs">
+      <Link>youtubeextensions.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubefeed.cs">
+      <Link>youtubefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubequery.cs">
+      <Link>youtubequery.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtuberequest.cs">
+      <Link>youtuberequest.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeservice.cs">
+      <Link>youtubeservice.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\YouTube.MA\youtube.sn">
+      <Link>youtube.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MT\CommonDataExtensions.MT.csproj">
+      <Project>{08DDA25D-F04B-49E0-AB43-3442E06BE662}</Project>
+      <Name>CommonDataExtensions.MT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MT\Core.Client.MT.csproj">
+      <Project>{4A546E24-08EE-4F2D-B427-96D44D703C3C}</Project>
+      <Name>Core.Client.MT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="YouTube SDK\Help\" />
+    <Folder Include="YouTube SDK\YouTube SDK\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="57963e27-0300-482b-8f9d-330dbda7a5d1" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

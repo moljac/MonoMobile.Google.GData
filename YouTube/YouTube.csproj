@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C497F73-7C10-4DC6-A680-CAA9DF442E91}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Google.GData.YouTube</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.GData.YouTube</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProductVersion>10.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\youtube.xml</DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ASP|AnyCPU' ">
+    <OutputPath>bin\ASP\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>PARTIALLY_TRUSTED</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions\CommonDataExtensions.csproj">
+      <Project>{21BCB644-F9C3-4ADC-8BE1-4E55C6565011}</Project>
+      <Name>CommonDataExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client\Core.Client.csproj">
+      <Project>{B6F6D938-0D45-42BA-8A67-55D92EF03995}</Project>
+      <Name>Core.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\YouTube.MA\YouTube SDK\YouTube SDK.sln">
+      <Link>YouTube SDK\YouTube SDK.sln</Link>
+    </Content>
+    <Content Include="..\YouTube.MA\YouTube SDK\YouTube SDK\YouTube SDK.vdproj">
+      <Link>YouTube SDK\YouTube SDK\YouTube SDK.vdproj</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\YouTube.MA\YouTube SDK\Help\YouTubeSDK.chm">
+      <Link>YouTube SDK\Help\YouTubeSDK.chm</Link>
+    </None>
+    <None Include="..\YouTube.MA\YouTube SDK\YouTubeSDKHelp.shfbproj">
+      <Link>YouTube SDK\YouTubeSDKHelp.shfbproj</Link>
+    </None>
+    <None Include="..\YouTube.MA\youtube.sn">
+      <Link>youtube.sn</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YouTube.MA\activitiesfeed.cs">
+      <Link>activitiesfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\activityentry.cs">
+      <Link>activityentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\commententry.cs">
+      <Link>commententry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\commentsfeed.cs">
+      <Link>commentsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\complaintentry.cs">
+      <Link>complaintentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\friendsentry.cs">
+      <Link>friendsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\friendsfeed.cs">
+      <Link>friendsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\messageentry.cs">
+      <Link>messageentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\messagefeed.cs">
+      <Link>messagefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistentry.cs">
+      <Link>playlistentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistfeed.cs">
+      <Link>playlistfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistsentry.cs">
+      <Link>playlistsentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\playlistsfeed.cs">
+      <Link>playlistsfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\profileentry.cs">
+      <Link>profileentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\profilefeed.cs">
+      <Link>profilefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showentry.cs">
+      <Link>showentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showfeed.cs">
+      <Link>showfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showseasonentry.cs">
+      <Link>showseasonentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\showseasonfeed.cs">
+      <Link>showseasonfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\subscriptionentry.cs">
+      <Link>subscriptionentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\subscriptionfeed.cs">
+      <Link>subscriptionfeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubebaseentry.cs">
+      <Link>youtubebaseentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeentry.cs">
+      <Link>youtubeentry.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeextensions.cs">
+      <Link>youtubeextensions.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubefeed.cs">
+      <Link>youtubefeed.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubequery.cs">
+      <Link>youtubequery.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtuberequest.cs">
+      <Link>youtuberequest.cs</Link>
+    </Compile>
+    <Compile Include="..\YouTube.MA\youtubeservice.cs">
+      <Link>youtubeservice.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="57963e27-0300-482b-8f9d-330dbda7a5d1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

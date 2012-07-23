@@ -1,0 +1,7 @@
+Procedure
+	1. add mobile project (WP)
+		
+projects to solve first
+	Common Data Extensions
+	Core Client
+

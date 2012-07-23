@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD87E961-0641-478C-8520-ECC793A439FE}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.GData.ContentForShopping</RootNamespace>
+    <AssemblyName>Google.GData.ContentForShopping.MA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="contentforshoppingnametable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="contentforshoppingservice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datafeedentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datafeedfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datafeedquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dataqualityentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dataqualityfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dataqualityquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="elements\accountstatus.cs" />
+    <Compile Include="elements\additionalimagelink.cs" />
+    <Compile Include="elements\admin.cs" />
+    <Compile Include="elements\adult.cs" />
+    <Compile Include="elements\adultcontent.cs" />
+    <Compile Include="elements\adwordsgrouping.cs" />
+    <Compile Include="elements\adwordslabels.cs" />
+    <Compile Include="elements\adwordsqueryparam.cs" />
+    <Compile Include="elements\adwordsredirect.cs" />
+    <Compile Include="elements\agegroup.cs" />
+    <Compile Include="elements\attributelanguage.cs" />
+    <Compile Include="elements\author.cs" />
+    <Compile Include="elements\availability.cs" />
+    <Compile Include="elements\brand.cs" />
+    <Compile Include="elements\channel.cs" />
+    <Compile Include="elements\color.cs" />
+    <Compile Include="elements\condition.cs" />
+    <Compile Include="elements\contentlanguage.cs" />
+    <Compile Include="elements\customattribute.cs" />
+    <Compile Include="elements\customgroup.cs" />
+    <Compile Include="elements\datapoint.cs" />
+    <Compile Include="elements\delimiter.cs" />
+    <Compile Include="elements\edition.cs" />
+    <Compile Include="elements\encoding.cs" />
+    <Compile Include="elements\exampleitem.cs" />
+    <Compile Include="elements\exampleitemlink.cs" />
+    <Compile Include="elements\exampleitemtitle.cs" />
+    <Compile Include="elements\excludeddestination.cs" />
+    <Compile Include="elements\expirationdate.cs" />
+    <Compile Include="elements\feature.cs" />
+    <Compile Include="elements\featuredproduct.cs" />
+    <Compile Include="elements\feedfilename.cs" />
+    <Compile Include="elements\feedtype.cs" />
+    <Compile Include="elements\fileformat.cs" />
+    <Compile Include="elements\gender.cs" />
+    <Compile Include="elements\genre.cs" />
+    <Compile Include="elements\googleproductcategory.cs" />
+    <Compile Include="elements\gtin.cs" />
+    <Compile Include="elements\imagelink.cs" />
+    <Compile Include="elements\internalid.cs" />
+    <Compile Include="elements\issue.cs" />
+    <Compile Include="elements\issuegroup.cs" />
+    <Compile Include="elements\issuegroups.cs" />
+    <Compile Include="elements\itemgroupid.cs" />
+    <Compile Include="elements\itemid.cs" />
+    <Compile Include="elements\manufacturer.cs" />
+    <Compile Include="elements\material.cs" />
+    <Compile Include="elements\modelnumber.cs" />
+    <Compile Include="elements\mpn.cs" />
+    <Compile Include="elements\pages.cs" />
+    <Compile Include="elements\pattern.cs" />
+    <Compile Include="elements\performance.cs" />
+    <Compile Include="elements\permission.cs" />
+    <Compile Include="elements\price.cs" />
+    <Compile Include="elements\processingstatus.cs" />
+    <Compile Include="elements\productcontrol.cs" />
+    <Compile Include="elements\productid.cs" />
+    <Compile Include="elements\productreviewaverage.cs" />
+    <Compile Include="elements\productreviewcount.cs" />
+    <Compile Include="elements\producttype.cs" />
+    <Compile Include="elements\productweight.cs" />
+    <Compile Include="elements\publisher.cs" />
+    <Compile Include="elements\quantity.cs" />
+    <Compile Include="elements\requireddestination.cs" />
+    <Compile Include="elements\reviewsurl.cs" />
+    <Compile Include="elements\saleprice.cs" />
+    <Compile Include="elements\salepriceeffectivedate.cs" />
+    <Compile Include="elements\shipping.cs" />
+    <Compile Include="elements\shippingcountry.cs" />
+    <Compile Include="elements\shippingprice.cs" />
+    <Compile Include="elements\shippingregion.cs" />
+    <Compile Include="elements\shippingservice.cs" />
+    <Compile Include="elements\shippingweight.cs" />
+    <Compile Include="elements\size.cs" />
+    <Compile Include="elements\status.cs" />
+    <Compile Include="elements\submittedvalue.cs" />
+    <Compile Include="elements\targetcountry.cs" />
+    <Compile Include="elements\tax.cs" />
+    <Compile Include="elements\taxcountry.cs" />
+    <Compile Include="elements\taxrate.cs" />
+    <Compile Include="elements\taxregion.cs" />
+    <Compile Include="elements\taxship.cs" />
+    <Compile Include="elements\usequotedfields.cs" />
+    <Compile Include="elements\validatedestination.cs" />
+    <Compile Include="elements\valueonlandingpage.cs" />
+    <Compile Include="elements\warning.cs" />
+    <Compile Include="elements\warningcode.cs" />
+    <Compile Include="elements\warningdomain.cs" />
+    <Compile Include="elements\warninglocation.cs" />
+    <Compile Include="elements\warningmessage.cs" />
+    <Compile Include="elements\warnings.cs" />
+    <Compile Include="elements\year.cs" />
+    <Compile Include="inventoryentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inventoryfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="itemquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="managedaccountsentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="managedaccountsfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="managedaccountsquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="productentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="productfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="productquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usersentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="usersfeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="usersquery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonDataExtensions.MA\CommonDataExtensions.MA.csproj">
+      <Project>{C40B61B8-E1BD-4B5C-993A-58FF622AE38F}</Project>
+      <Name>CommonDataExtensions.MA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Client.MA\Core.Client.MA.csproj">
+      <Project>{EF95AD9D-D1F5-4C04-B53C-02E21B624ABC}</Project>
+      <Name>Core.Client.MA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
