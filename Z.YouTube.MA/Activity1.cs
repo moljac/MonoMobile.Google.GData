@@ -25,7 +25,12 @@ namespace Z.YouTube.MA
 			// Set our view from the "main" layout resource
 			//SetContentView(Resource.Layout.Main);
 
-			CallYoutube();
+			data = new List<string>();
+
+			var t = new System.Threading.Thread(CallYoutube);
+			t.Start();
+			//CallYoutube();
+
 			ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.list_item, data);
 
 			ListView.TextFilterEnabled = true;
@@ -38,7 +43,8 @@ namespace Z.YouTube.MA
 		void ListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
 		{
 			// When clicked, show a toast with the TextView text
-			//Toast.MakeText(Application, ((TextView)).Text, ToastLength.Short).Show();
+			string msg = ((TextView)e.View).Text;
+			Toast.MakeText(Application, msg, ToastLength.Short).Show();
 
 			return;
 		}
@@ -55,7 +61,6 @@ namespace Z.YouTube.MA
 
 			var feed = yreq.GetVideoFeed("xamarinhq");
 
-			data = new List<string>();
 			// feed.Entries.ToList().ForEach((video) // MikeB's code
 			// =>
 			foreach (GYT.Video v in feed.Entries)
