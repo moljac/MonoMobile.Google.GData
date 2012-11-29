@@ -4,6 +4,8 @@ MonoMobile.Google.GData
 Google.GData port for mobile platforms
 http://holisticware.net
 
+https://groups.google.com/forum/?fromgroups#!forum/gdata-dotnet-client-library
+
 TODOs:
 	2012-07-22
 		Samples
